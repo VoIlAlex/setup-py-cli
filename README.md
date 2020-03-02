@@ -13,7 +13,7 @@ Generates *setup.py* file with the following content:
 
 ## Installation
 ```bash
-sudo pip install setup-py
+sudo pip install setup-py-cli
 ```
 
 ## Usage
