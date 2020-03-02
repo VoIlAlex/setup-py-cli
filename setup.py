@@ -23,7 +23,7 @@ setup(
     install_requires=[],
     classifiers=[
         'Development Status :: 3 - Alpha',
-        'Topic :: Software Development :: Code Generators'
+        'Topic :: Software Development :: Code Generators',
         'Topic :: Software Development :: Libraries',
         'Topic :: Utilities',
         'Topic :: System :: Installation/Setup',
