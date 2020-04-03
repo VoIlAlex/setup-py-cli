@@ -16,7 +16,7 @@ def cli():
 
     generator.arguments.packages = SetupPyArgument(
         description='Packages to include into the distribution',
-        value=SetupPyCode("find_packages(',')"),
+        value=SetupPyCode("find_packages('.')"),
         imports=[
             'from setuptools import find_packages'
         ]
