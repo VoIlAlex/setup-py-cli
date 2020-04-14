@@ -9,14 +9,14 @@ with open(os.path.join(current_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='setup-py-cli',
-    version='2.0.2',
+    version='2.0.3',
     license='MIT',
     packages=find_packages('.'),
     description='Simple module to generate setup.py template.',
     author='Ilya Vouk',
     author_email='ilya.vouk@gmail.com',
-    url='https://github.com/VoIlAlex/setup-py',
-    download_url='https://github.com/VoIlAlex/setup-py/archive/v2.0.2.tar.gz',
+    url='https://github.com/VoIlAlex/setup-py-cli',
+    download_url='https://github.com/VoIlAlex/setup-py/archive/v2.0.3.tar.gz',
     long_description=long_description,
     long_description_content_type='text/markdown',
     keywords=['generator', 'setup', 'distribution', 'devtools'],
