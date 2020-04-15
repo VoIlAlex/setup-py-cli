@@ -5,8 +5,7 @@ from .generator import (
     SetupPyCode
 )
 
-
-def cli():
+def main():
     _, cwd_dirname = os.path.split(os.getcwd())
     generator = SetupPyGenerator()
     generator.arguments.name = SetupPyArgument(
@@ -89,6 +88,10 @@ except Exception:
     with open(setup_py_path, 'w+') as setup_py_file:
         setup_py_file.write(setup_py)
 
+
+def cli(*args, **kwargs):
+    main(*args, **kwargs)
+    
 
 if __name__ == "__main__":
     cli()
