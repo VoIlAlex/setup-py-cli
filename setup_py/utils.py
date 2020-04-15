@@ -27,3 +27,9 @@ def config_section(section_name: str):
         default_section = parser['DEFAULT']
         yield default_section
 
+
+def build_repo_url(username: str, repo_name: str):
+    return f'https://github.com/{username}/{repo_name}'
+
+def build_download_url(username: str, repo_name: str, tag: str = 'v1.0.0'):
+    return f'https://github.com/{username}/{repo_name}/archive/{tag}.tar.gz'
