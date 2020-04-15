@@ -18,3 +18,12 @@ def config_parser():
 
     with open(app_data_paths.main_config_path, 'w+') as f:
         config_parser.write(f)
+
+@contextmanager
+def config_section(section_name: str):
+    with config_parser() as parser:
+        if 'DEFAULT' not in parser:
+            parser['DEAFULT'] = {}
+        default_section = parser['DEFAULT']
+        yield default_section
+
